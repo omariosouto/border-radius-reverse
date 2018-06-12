@@ -9,7 +9,6 @@
     ga('send', 'pageview');
 </script>
 
-
 <style>
     * { padding: 0; margin: 0; font-family: sans-serif; }
     body {
@@ -36,6 +35,20 @@
         background-color: transparent; 
         background-image: paint(border-radius-reverse);
     }
+
+    h2 {
+        text-align: center;
+    }
+
+    style {
+        max-width: 80%;
+        margin: auto;
+        color: #222222;
+        background: #ddd; 
+        border-radius: 10px;
+        padding: 2%;
+        box-sizing: border-box; 
+    }
 </style>
 
 <a href="https://github.com/omariosouto/border-radius-reverse/" target="_blank" class="githubCorner" aria-label="View source on Github">
@@ -46,17 +59,18 @@
     </svg>
 </a>
 
+
 <div class="square radius-normal"></div>  
 <div class="square radius-reverse"></div>
 
+<h2>Altere os valores do css abaixo :)</h2>
 
-<style style="display: block; white-space: pre;" contenteditable="true">
-    .radius-normal {
-        border-radius: 10px;
-    }
-    .radius-reverse {
-        --border-radius-reverse: 10;
-    }
+<style style="display: block; white-space: pre;" contenteditable="true">.radius-normal {
+    border-radius: 10px;
+}
+.radius-reverse {
+    --border-radius-reverse: 10;
+}
 </style>
 
 <script>
