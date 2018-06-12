@@ -16,7 +16,7 @@ class BorderRadiusReversePainter {
         const radiusValue = props.get('--border-radius-reverse').toString()
         console.log(radiusValue)
 
-        ctx.fillStyle = "royalblue"; // fixed color
+        ctx.fillStyle = "#ff6a00"; // fixed color
         ctx.fillRect(0, 0, geom.width, geom.height);
         
         this.clearCircle(ctx, 0, 0, radiusValue) // Left top
