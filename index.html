@@ -1,0 +1,35 @@
+<style>
+    * { font-family: sans-serif; }
+    body {
+        background-color: #ccc;
+    }
+    .square {
+        width: 100px;
+        height: 100px;
+        background-color: royalblue;
+        display: inline-block;
+        margin: 15px;
+    }
+    .radius-reverse {
+        background-color: transparent; 
+        background-image: paint(border-radius-reverse);
+        --border-radius-reverse: 10;
+    }
+</style>
+
+<div class="square radius-normal"></div>  
+<div class="square radius-reverse"></div>
+
+
+<style style="display: block; white-space: pre;" contenteditable="true">
+    .radius-normal {
+        border-radius: 10px;
+    }
+    .radius-reverse {
+        --border-radius-reverse: 10;
+    }
+</style>
+
+<script>
+    CSS.paintWorklet.addModule('border-radius-reverse.js');
+</script>
