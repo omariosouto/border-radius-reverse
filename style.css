@@ -19,10 +19,6 @@ body {
     display: inline-block;
     margin: 15px;
 }
-.radius-reverse {
-    background-color: transparent; 
-    background-image: paint(border-radius-reverse);
-}
 
 h2 {
     text-align: center;
